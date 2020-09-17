@@ -27,8 +27,9 @@
         .socials {
             display: inline-block;
             width: 100%;
+            border-bottom: 1px solid #ffffff;
         }
-        .texts {
+        .footer-texts {
             display: inline-block;
             width: 600px;
             margin-left: calc((100% - 600px) / 2);

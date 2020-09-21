@@ -11,9 +11,11 @@
         text-align: center;
     }
         .hero-row > .logo {
-            display: inline-block;  
+            display: inline-block;
+            height: ;: 60px;  
             margin-bottom: 30px; 
-            width: 60px; 
+            object-fit: contain;
+            object-position: center;
         }
         .title {
             display: inline-block;
@@ -40,9 +42,9 @@
         }
     .row {
         display: inline-block;
-        width: 600px;
-        margin-left: calc((100% - 600px) / 2);
-        background-color: red;
+        width: 1000px;
+        margin-left: calc((100% - 1000px) / 2);
+        margin-right: calc((100% - 1000px) / 2);
     }
         .left-column {
             display: inline-block;
@@ -65,15 +67,64 @@
                 font-size: 18px;
                 margin-bottom: 15px;
             }
+    footer.container {
+        text-align: center;
+        padding-top: 0;
+        font-size: 18px;
+    }
         .socials {
             display: inline-block;
             width: 100%;
             border-bottom: 1px solid #ffffff;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
+            .socials > .fa {
+                color: #fff;
+                text-decoration: none;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                margin: 5px;
+            }
+                .socials > .fa:hover {
+                    background-color: #fff;
+                    color: #03A9F4;
+                }
         .footer-texts {
             display: inline-block;
             width: 600px;
             margin-left: calc((100% - 600px) / 2);
+            margin-right: calc((100% - 600px) / 2);
+            color: #ffffffaa;
+        }
+        .footer-texts > .logo {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .copyright {
+            display: inline-block;
+        }
+            .copyright > .texts {
+                display: inline-block;
+                float: left;
+            }
+            .copyright > .texts.borders {
+                margin-left: 10px;
+                margin-right: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border: 1px solid #fff;
+                border-top: none;
+                border-bottom: none;
+            }
+        .footer-texts > p {
+            display: inline-block;
+            width: 100%;
+        }
+        .footer-texts a {
+            color: #fff;
         }
 
 .bg-blue {

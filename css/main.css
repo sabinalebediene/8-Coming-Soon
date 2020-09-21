@@ -8,8 +8,36 @@
         display: inline-block;
         width: 600px;
         margin-left: calc((100% - 600px) / 2);
-        background-color: red;
+        text-align: center;
     }
+        .hero-row > .logo {
+            display: inline-block;  
+            margin-bottom: 30px; 
+            width: 60px; 
+        }
+        .title {
+            display: inline-block;
+            width: 100%;
+            text-transform: uppercase;
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            display: inline-block;
+            width: 100%;
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 60px;
+        }
+        .clock {
+            margin-bottom: 60px;
+        }
+        .hero-row > .form {
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 20px;
+        }
     .row {
         display: inline-block;
         width: 600px;

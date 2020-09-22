@@ -2,7 +2,7 @@
     display: inline-block;
     width: 26px;
     height: 38px;
-    border: 3px solid #ffffff;
+    border: 3px solid #fff;
     border-radius: 13px;
     position: relative;
 }
@@ -14,35 +14,28 @@
         top: 6px;
         left: 50%;
         transform: translate(-50%, 0);
-        background-color: #ffffff;
+        background-color: #fff;
         border-radius: 8px;
         animation-name: scrolling;
-        animation-duration: 2s;
-        /* tuo kuo baigei, tuo ir pasilik */
+        animation-duration: 1s;
         animation-fill-mode: forwards;
-        /* ease in - lengva pradzia, linear visada vienodas greitis, steps - laipteliais */
         animation-timing-function: ease;
         animation-iteration-count: infinite;
-        /* animavimo kriptis */
-        /* animation-direction: alternate-reverse; */
+        /* background-image: url(../img/mouse.jpeg);
+        background-size: contain;
+        background-position: center; */
     }
-    /* hover - kai kursorius uzbega ant objekto ir aprasome, ka darome toliau
-    .mouse > .wheel :hover {
-        } */
+
 @keyframes scrolling {
     0% {
-        top: 6px;
-        /* background-color: rgb(2555, 2555, 255, 1); */
         opacity: 1;
+        transform: translate(-50%, 0);
     }
-    30%% {
+    30% {
         opacity: 1;
     }
     100% {
-        top: 20px;
         opacity: 0;
-        /* background-color: rgb(2555, 2555, 255, 0); */
-        /* background-color: transparent; */
+        transform: translate(-50%, 200%);
     }
-    
 }

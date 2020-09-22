@@ -5,8 +5,9 @@
     .progress-bar > .top {
         display: inline-block;
         width: 100%;
+        margin-bottom: 5px;
     }
-        .progress-bar > .top > .lable {
+        .progress-bar > .top > .label {
             display: inline-block;
             float: left;
         }
@@ -18,11 +19,28 @@
         display: inline-block;
         width: 100%;
         height: 7px;
-        background-color: #EDEDED;
-    }    
+        background-color: #ccc;
+    }
         .progress-bar > .bottom > .progress {
             display: inline-block;
             width: 86%;
             height: 100%;
-            background-color: #00A3F2;
+            background-color: transparent;
         }
+            .progress-bar > .bottom > .progress > .bar {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                background-color: #36f;
+                animation-name: loading;
+                animation-duration: 2s;
+            }
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}

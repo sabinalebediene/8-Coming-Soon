@@ -12,8 +12,9 @@
     }
         .hero-row > .logo {
             display: inline-block;
-            height: ;: 60px;  
-            margin-bottom: 30px; 
+            height: 60px;
+            width: 100%;
+            margin-bottom: 30px;
             object-fit: contain;
             object-position: center;
         }
@@ -75,7 +76,7 @@
         .socials {
             display: inline-block;
             width: 100%;
-            border-bottom: 1px solid #ffffff;
+            border-bottom: 1px solid #fff;
             padding-top: 10px;
             padding-bottom: 10px;
         }
@@ -99,33 +100,33 @@
             margin-right: calc((100% - 600px) / 2);
             color: #ffffffaa;
         }
-        .footer-texts > .logo {
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-        .copyright {
-            display: inline-block;
-        }
-            .copyright > .texts {
+            .footer-texts > .logo {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            .copyright {
                 display: inline-block;
-                float: left;
             }
-            .copyright > .texts.borders {
-                margin-left: 10px;
-                margin-right: 10px;
-                padding-left: 10px;
-                padding-right: 10px;
-                border: 1px solid #fff;
-                border-top: none;
-                border-bottom: none;
+                .copyright > .texts {
+                    display: inline-block;
+                    float: left;
+                }
+                .copyright > .texts.borders {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    border: 1px solid #fff;
+                    border-top: none;
+                    border-bottom: none;
+                }
+            .footer-texts > p {
+                display: inline-block;
+                width: 100%;
             }
-        .footer-texts > p {
-            display: inline-block;
-            width: 100%;
-        }
-        .footer-texts a {
-            color: #fff;
-        }
+            .footer-texts a {
+                color: #fff;
+            }
 
 .bg-blue {
     background-color: #03A9F4;
@@ -137,46 +138,56 @@
     background-position: bottom center;
     background-attachment: fixed;
 }
+
 @media (max-width: 1100px) {
     .row {
         width: 800px;
         margin-left: calc((100% - 800px) / 2);
+        margin-right: calc((100% - 800px) / 2);
     }
 }
+
 @media (max-width: 900px) {
-    .hero-row,.row,.footer-texts {
+    .row {
         width: 600px;
         margin-left: calc((100% - 600px) / 2);
+        margin-right: calc((100% - 600px) / 2);
     }
-    .left-column {
-        width: 100%;
-        margin-bottom: 60px;
+        .left-column {
+            width: 100%;
+            margin-bottom: 60px;
+        }
+        .right-column {
+            width: 100%;
+        }
+}
+
+@media (max-width: 700px) {
+    .hero-row,
+    .row,
+    .footer-texts {
+        width: 400px;
+        margin-left: calc((100% - 400px) / 2);
+        margin-right: calc((100% - 400px) / 2);
     }
-    .right-column {
+    .copyright > .texts,
+    .copyright > .texts.borders {
         width: 100%;
+        border: none;
+        margin: 0;
     }
 }
-@media (max-width: 700px) {
+
+@media (max-width: 500px) {
     .container {
         padding-left: 20px;
         padding-right: 20px;
     }
     .hero-row,
     .row,
-    .texts {
-        width: 400px;
-        margin-left: calc((100% - 400px) / 2);
-    }
-    .hero-row,.row,.text{
+    .footer-texts {
         width: 100%;
         margin-left: 0;
-    }
-}
-@media (max-width: 500px) {
-    .hero-row,
-    .row,
-    .texts  {
-        width: 100%;
-        margin-left: 0;
+        margin-right: 0;
     }
 }
